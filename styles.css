@@ -1,0 +1,180 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffdd0;
+}
+
+
+/* Style the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+nav .logo {
+    width: 100px;
+    height: 50px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    transform: translateY(-8px);
+    animation: zoomInOut 5s infinite ease-in-out; /* Smooth animation applied */
+    
+}
+
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: translateY(-8px) scale(1); /* Normal size */
+    }
+    30% {
+        transform: translateY(-8px) scale(1.2); /* Zoom in */
+    }
+}
+
+
+    
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section with Background Image */
+/* Hero Section with Background Image */
+.hero {
+    
+    position: relative;
+    width: 100%; /* Full width */
+    height: 348px; /* Fixed height for the hero section */
+    background: url('images/jason-briscoe-jAE0R8jVOAA-unsplash.jpg') no-repeat center center/cover; /* Background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+}
+
+p {
+    margin: 30px; /* Optional: Add a small gap above the paragraph */
+    text-align: center; /* Center the text inside the paragraph */
+    max-width: 800px; /* Optional: Limit the width of the paragraph for better readability */
+    line-height: 1; /* Optional: Improve line spacing for readability */
+
+}
+
+/* hero for home page */
+.hero-home {
+    background: url(images/jason-briscoe-jAE0R8jVOAA-unsplash.jpg) no-repeat center center/cover; 
+    /* Background image */
+}
+
+/* hero for StEnoch page */
+.hero-StEnoch {
+    background: url(images/STEnoch.jpg) no-repeat center center/cover; 
+    /* Background image */
+}
+
+/* hero for Buchanan page */
+.hero-Buchanan {
+    background: url(images/thiago-rocha-w7vf6ApGQLw-unsplash.jpg) no-repeat center center/cover; 
+    /* Background image */
+}
+
+/* hero for Fort page */
+.hero-Fort {
+    background: url(images/Fort1.jpg) no-repeat center center/cover; 
+    /* Background image */
+}
+
+/* hero for Braehead page */
+.hero-Braehead {
+    background: url(images/Braehead.jpg) no-repeat center center/cover; 
+    /* Background image */
+}
+
+/* hero for Silverburn page */
+.hero-Silverburn {
+    background: url(images/Silverburn.jpg) no-repeat center center/cover; 
+    /* Background image */
+}
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 1em;
+    }
+
+}
+
+
+
+
+header {
+    background-image: url('background.jpg'); /* Replace with actual background image */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(149, 141, 141);
+    font-size: 24px;
+}
+
+/* Image Grid */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image-box {
+    margin: 10px;
+    text-align: center;
+}
+
+.image-box img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer a {
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+}
